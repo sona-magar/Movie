@@ -6,11 +6,13 @@ import Error404Page from '../Error/Error404Page.jsx'
 
 function MainRoutes() {
   return (
+    <div style ={{minheight:'100vh' , minwidth:"100vw"}}>
     <Routes>
       <Route path='' element={<Authentication />} />
       <Route path='/dashboard' element={<Dashboard />} />
       <Route path='*' element={<Error404Page/>}></Route>
     </Routes>
+    </div>
   )
 }
 
